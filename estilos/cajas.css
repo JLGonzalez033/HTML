@@ -1,0 +1,25 @@
+body{
+    background-color: slateblue;
+    font-size: 10px;
+}
+#caja1{
+    background-color: snow;
+    font-size: 2em;
+    height: 300px;
+}
+div#caja1 > div.cajas > p{
+font-size: 1em;
+color: yellow;
+}
+#caja2{
+    background-color: turquoise;
+}
+.cajas{
+    background-color: violet;
+    width: 20%;
+    height: 200px;
+    /*border: 2px solid #FFF;*/
+    float: left;
+    margin-left: 4%;
+    margin-top: 20px;
+}
