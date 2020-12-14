@@ -1,0 +1,94 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+#header{
+    width: 100%;
+    height: 70px;
+    background-color: crimson;
+}
+#button1{
+    width: 120px;
+    height: 50px;
+    margin-top: 9px;
+    margin-left: 15px;
+    background-color: orange;
+    float: left;
+}
+#button2{
+    width: 120px;
+    height: 50px;
+    margin-top: 9px;
+    margin-left: 76%;
+    margin-right: 15px;
+    background-color: orange;
+    float: right;
+}
+#central{
+    background-color: peachpuff;
+    height: 300px;
+}
+#central2{
+    background-color: hotpink;
+    height: 300px;
+}
+#cuadro{
+    width: 260px;
+    height: 80%;
+    margin: 30px;
+    margin-left: 380px;
+    background-color: mediumpurple;
+    float: left;
+}
+#cuadro2{
+    width: 260px;
+    height: 80%;
+    margin: 30px;
+    background-color: mediumpurple;
+    float: left;
+}
+#cuadro3{
+    width: 260px;
+    height: 80%;
+    margin: 30px;
+    background-color: mediumpurple;
+    float: left;
+}
+#cuadro4{
+    width: 260px;
+    height: 80%;
+    margin: 30px;
+    background-color: mediumpurple;
+    float: left;
+}
+#central3{
+    background-color: blue;
+    height: 300px;
+}
+#cuadro_1{
+    width: 560px;
+    height: 80%;
+    margin: 30px;
+    margin-left: 400px;
+    background-color: mediumpurple;
+    float: left;
+}
+#cuadro2_1{
+    width: 560px;
+    height: 80%;
+    margin: 30px;
+    background-color: mediumpurple;
+    float: left;
+}
+#central4{
+    background-color: black;
+    height: 300px;
+}
+#cuadro_2{
+    width: 560px;
+    height: 80%;
+    margin: 30px;
+    margin-left: 700px;
+    background-color: mediumpurple;
+    float: left;
+}
