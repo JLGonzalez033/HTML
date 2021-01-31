@@ -4,8 +4,9 @@
 
 }
 body{
-    background-color: white;
+    background-color: whitesmoke;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden ;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Yusei Magic', sans-serif;
@@ -22,8 +23,9 @@ h3{
 header{
     position: fixed;
     height: 70px;
-    border-bottom: 1px solid #c1c1c1;
+    border-bottom: 1px solid whitesmoke;
     width: 100%;
+    background-color: whitesmoke;
 }
 header > #logo{
     padding-top: 15px;
@@ -87,4 +89,74 @@ section#main .bola img{
     margin-top: 100px;
     margin-left: 100px;
     transform: rotate(-30deg);
+}
+#numeros{
+    border-right: 10px solid #19a49c;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+#numeros > div > .col > h5{
+    border-bottom: 1px solid #1d1d1d;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+#news, #contact{
+    width: 90%;
+    margin-left: 90px;
+    min-height: 300px;
+    display: block;
+    margin-top: 50px;
+}
+#news .columna3{
+    float: left;
+    width: 25%;
+    height: 200px;
+    margin-left: 6.5%;
+}
+
+#news .columna3  a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+#news .columna3 a img{
+    width: 100%;
+    height: 90%;
+}
+#contact h2{
+    margin-top: 200px;
+}
+#contact fieldset{
+    border: none;
+    padding: 5px; 
+}
+#contact fieldset label{
+    display: block;
+    width: 100%;
+}
+#contact fieldset input, #contact fieldset textarea{
+    display: block;
+    width: 90%;
+    border: 1px solid #eeeeee;
+    padding: 5px;
+    outline-color: #eeeeee;
+    height: 30px;
+}
+#contact fieldset button{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    background-color: #19a49c;
+    color: white;
+    border: none;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-color: #19a49c;
+    color: whitesmoke;
 }
