@@ -1,0 +1,41 @@
+@media screen and (min-width: 576px){
+    .col{
+        width: 100%;
+    }
+    #news .columna3{
+      
+        width: 100%;
+        margin-left: 0%;
+
+    }
+    nav{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+}
+@media screen and (min-width: 768px){
+    #menu{
+        display: none;
+    }
+}
+@media screen and (min-width: 992px){
+    col{
+        width: 50%;
+    }
+    #news .columna3{
+       
+        width: 25%;
+
+     
+    }
+    #menu{
+        display: none;
+    }
+}
+@media print {
+    header{
+        display: none;
+    }
+}
