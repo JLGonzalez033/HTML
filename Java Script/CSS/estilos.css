@@ -1,0 +1,51 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+body{
+    background-color: black;
+
+}
+#login{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: ;
+    left: 35%;
+    border-radius: 20px;
+    padding: 40px;
+}
+#login h1{
+    background-color: black;
+    color: white;
+}
+#login input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: gray;
+    outline-color: none;
+
+}
+#login button{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin-top: 20px;
+}
+.alerta{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    display: block;
+    display: none;
+}
