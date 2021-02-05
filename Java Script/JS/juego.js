@@ -1,10 +1,28 @@
 //me aseguro de que sea cargado toda la pagina
 
+var indiceRandom=0;
+var op=[];
 $(document).ready(function(){
 
-    $("#login").animate({
+    /*$("#login").animate({
         'top':"10%"
-    },300);
+    },300);*/
+    $.getJSON("https://raw.githubusercontent.com/Bowserinator/Periodic-Table-JSON/master/PeriodicTableJSON.json", 
+    function(data){
+        //console.log(data.elements[0].name);
+        var cuantos = data.elementos.lenght;
+        var random=Math.floor( Math.random() * cuantos);
+        $("Elemento").find("h2").text(data.elements(random).name);
+        for(var i=0;i<3;i++){
+            var int=Math.floor( Math.random() * cuantos);
+            op.push(n);
+            $("#Opciones").find('ul').append('<li><h2>'+ data.elements[n].symbol+'<h2><li>');
+        }
+        $("#Opciones").find('ul').append('<li><h2>'+ data.elements[indiceRandom].symbol+'<h2><li>');
+        op.push(indiceRandom);
+        console.log(op);
+
+    });
     $("#txtNombre").on('keyup',function(){
         $("txtNombre").css('border','1px solid white');
         $(".alerta").fadeout(400);
