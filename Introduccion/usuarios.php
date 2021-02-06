@@ -1,3 +1,7 @@
+<?php
+include "./php/conexion.php" 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,11 +36,9 @@
           <div class="col-sm-6">
             <h1>Usuarios</h1>
           </div>
-         
         </div>
       </div><!-- /.container-fluid -->
     </section>
-
     <!-- Main content -->
     <section class="content">
 
@@ -53,28 +55,39 @@
               <i class="fas fa-times"></i>
             </button>
           </div>
+          
         </div>
         <div class="card-body">
-          <form action="" class="row">
+        <?php
+        if(isset($_GET['error'])){
+            ?>
+            <div class="alert alert-danger">
+              <b>Error:</b> <?php echo $_GET['error'];?>
+          </div>
+        <?php
+        }
+        ?>
+
+          <form action="./php/insertarUsuario.php" class="row" method="POST">
               <div class="col-4">
                   <label for="">Nombre</label>
-                  <input type="text" class="form-control" placeholder="Insertar tu nombre">
+                  <input type="text" class="form-control" placeholder="Insertar tu nombre" name="nombre" id="txtNombre" required>
               </div>
               <div class="col-4">
                   <label for="">Apellido</label>
-                  <input type="text" class="form-control" placeholder="Insertar tu Apellido">
+                  <input type="text" class="form-control" placeholder="Insertar tu Apellido" name="ap" requiered>
               </div>
               <div class="col-4">
                   <label for="">Email</label>
-                  <input type="email" class="form-control" placeholder="Insertar tu email">
+                  <input type="email" class="form-control" placeholder="Insertar tu email" name="email" required>
               </div>
               <div class="col-4">
                   <label for="">Password</label>
-                  <input type="password" class="form-control" placeholder="Insertar tu password">
+                  <input type="password" class="form-control" placeholder="Insertar tu password" name="p1" required>
               </div>
               <div class="col-4">
                   <label for="">Confirmar Password</label>
-                  <input type="password" class="form-control" placeholder="Confirma tu password">
+                  <input type="password" class="form-control" placeholder="Confirma tu password" name="p2" required>
               </div>
               <div class="col-4 p-2">
                   <br>
